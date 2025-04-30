@@ -4,7 +4,7 @@ on:
     branches: ['main']
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: devOpsSre
 jobs:
   DockerBuildPublish:
     runs-on: ubuntu-latest
