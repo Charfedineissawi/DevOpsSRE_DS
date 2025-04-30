@@ -9,7 +9,7 @@ jobs:
   DockerBuildPublish:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
       packages: write
       pull-requests: write
     steps:
@@ -24,7 +24,7 @@ jobs:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Extract metadata (tags, labels) for Docker
+      - name: Extract Docker metadat
         id: meta
         uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
         with:
