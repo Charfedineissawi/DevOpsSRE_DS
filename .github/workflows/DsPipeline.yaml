@@ -4,7 +4,7 @@ on:
     branches: ['main']
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: devOpsSre
+  IMAGE_NAME: devopssre
 jobs:
   DockerBuildPublish:
     runs-on: ubuntu-latest
